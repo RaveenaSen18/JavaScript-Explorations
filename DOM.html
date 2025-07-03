@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container"></div>
+    <div id="removable">Remove Me</div>
+
+    <img id="myImage" src="image/flowers.jpg" alt="Old Alt Text" />
+
+    <button id="myButton">Click Me!</button>
+
+    <div id="parent">
+        <button class="child">Child Button 1</button>
+        <button class="child">Child Button 2</button>
+        </div>
+        
+    <script src="js/jquery.js"></script>
+<!-- <script>
+    $(document).ready(function(){
+        var newElement = $('<p>This is a new paragraph!</p>'); // Creates a new paragraph element.
+        $('#container').append(newElement); // Appends the new element to container.
+    })
+   
+</script> -->
+
+<!-- <script>
+    $(document).ready(function(){
+        $('#removable').remove(); 
+
+    }) 
+</script> -->
+    //  <!-- Removes the element with ID "removable" from the DOM. -->
+
+<!-- Modifying Attributes -->
+<!-- <script>
+    $(document).ready(function(){
+        $('#myImage').attr('alt', 'New Alt Text');
+    }) 
+</script> -->
+<!-- <script>
+    $(document).ready(function(){
+        $('#myButton').on('click', function() {
+        alert('Button was clicked!'); // Displays an alert when the button is clicked.
+    });
+
+    }) 
+</script> -->
+
+
+<script>
+    $(document).ready(function(){
+        $('#parent').on('click', '.child', function() {
+        alert('A child button was clicked!'); // Handles clicks on any .child button within parent.
+    });
+
+
+    }) 
+</script>
+
+
+</body>
+</html>

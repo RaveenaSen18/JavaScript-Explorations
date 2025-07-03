@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <h1></h1>
+    <input type="button" onClick="positions()" value=" Click to Display"/> 
+<script>
+ const person={
+  name:"keerthana",
+  place:"bhavani",
+  greet(){
+    return `hello, my name is ${this.name}  and i'm coming from ${this.place}`;
+  },
+ };
+  const personone=person.greet();
+  document.body.innerHTML= `<h1> ${personone} </h1>`;
+</script>
+</body>
+</html>

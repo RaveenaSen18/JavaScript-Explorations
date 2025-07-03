@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .input{
+            padding: 10px 10px;
+            left: 100px;
+            margin-top: 100px;
+            margin-left: 500px;
+            outline: none;
+        }
+        .btn{
+            padding: 10px 10px;
+            background-color: #1b63ff;
+            border: none;
+            border-radius: 8px;
+            width: 70px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <input type="text" placeholder="i like to eat" class="input" id="input" value="">
+        <button class="btn" id="btn">SAVE</button>
+    </div>
+    <div>
+        <div id="response"></div>
+
+    </div>
+    <script>
+       let inputFood= document.getElementById("input")
+       let inputBtn= document.getElementById("btn")
+       let response= document.getElementById("response")
+    //    console.log(inputFood,inputBtn);
+        inputBtn.addEventListener("click", ()=>{
+            // response.innerText= inputFood.value;
+            document.write(inputFood.value);
+            // alert(inputFood.value);
+            
+        });
+
+
+     </script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+l<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: 0;
+            font-family: 'poppins', sans-serif;
+        }
+        body{
+            background-color: aliceblue;
+        }
+        header{
+            padding: 10px;
+            text-align: center;
+            background-color: #1b63ff;
+            color: white;
+            font-size: 20px;
+            font-weight: 600;
+        }
+        main{
+            margin: 20px auto;
+            width: 600px;
+            /* background-color: white; */
+            padding: 30px;
+            text-align: center;
+        }
+        .input-container{
+            display: flex;
+            justify-content: space-between;
+            background-color: white;
+            padding: 30px;
+        }
+        .input{
+            padding: 10px 10px;
+            /* left: 100px;
+            margin-top: 100px;
+            margin-left: 500px; */
+            width: 100%;
+            margin-right: 10px;
+            outline: none;
+        }
+        .btn{
+            padding: 10px 10px;
+            background-color: #1b63ff;
+            border: none;
+            border-radius: 8px;
+            width: 70px;
+            color: white;
+        }
+        .food-container{
+            list-style: none;
+            background-color: #fff;
+            margin: 20px 0;
+            padding: 20px;
+            text-align: left;
+            
+        }
+        .food-container .food-items{
+            padding: 10px;
+            font-size: 14px;
+            border: 1px solid rgb(238, 235, 235);
+            margin: 20px 0;
+            color: gray;
+            display: flex;
+            justify-content: space-between;
+        }
+        .food-container .food-items:hover{
+            background-color: rgb(79,123,255);
+            cursor: pointer;
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>FOOD CORT</header>
+    <main>
+        <div class="input-container">
+            <input type="text" placeholder="i like to eat" class="input" id="input" >
+            <button class="btn" id="btn">SAVE</button>
+        </div>
+        <div>
+            <div id="response"></div>
+        </div>
+        <div >
+            <ul id="food-container" class="food-container">
+                <li class="food-items">
+                    <div>Briyani</div>
+                    <div><button onclick= "removeItem(event)">x</button></div>
+                </li>
+                <li class="food-items">
+                    <div>Parato</div>
+                    <div><button onclick= "removeItem(event)">x</button></div>
+                </li>
+                <li class="food-items">
+                    
+                    <div>Meals</div>
+                    <div><button onclick= "removeItem(event)">x</button></div>
+                </li>
+            </ul>
+        </div>
+    </main>
+    <script>
+       
+        function removeItem(event){
+            alert('you have been clicked')
+            let existingList=event.target.parentNode.parentNode
+            console.log(event.target.parentNode.parentNode);
+
+            existingList.remove();
+        }
+
+
+
+
+     </script>
+</body>
+</html>

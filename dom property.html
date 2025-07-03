@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="myapp">
+        <h1>Learn HTML DOM in Javascript !!</h1>
+        <img src="images/images.gif" alt="">
+    </div>
+    
+<script>
+    document.addEventListener('DOMContentLoaded', () =>{
+        alert('DOMContentLoaded')
+    })
+
+  const app= document.getElementById('myapp')
+  const heading=app.children[0]
+  const image=app.children[1]
+  console.log(heading,image);
+//   app.innerHTML=`<h1> change the tag </h1>`
+
+  console.log(app);
+</script>
+</body>
+</html>
